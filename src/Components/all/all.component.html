@@ -1,0 +1,13 @@
+<div class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  text-left mt-20">
+    @for (item of DataList; track $index) {
+    <div class="bg-white duration-200 hover:scale-105 text-center rounded-3xl relative m-2 mb-20">
+        <img [src]="item.strMealThumb" class="w-[80%] relative bottom-14 ml-7 rounded-full hover:rotate-[360deg] duration-700" alt="">
+        <p class="font-[cursive] text-xl text-black font-semibold m-1">{{item.strMeal}}</p>
+        <div class="flex flex-nowrap justify-center text-[#059669] mb-5">
+            <img class="text-[#059669]" src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgaGVpZ2h0PSIxZW0iIHdpZHRoPSIxZW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDJDNi40ODYgMiAyIDYuNDg2IDIgMTJzNC40ODYgMTAgMTAgMTAgMTAtNC40ODYgMTAtMTBTMTcuNTE0IDIgMTIgMnpNNCAxMmMwLS44OTkuMTU2LTEuNzYyLjQzMS0yLjU2OUw2IDExbDIgMnYybDIgMiAxIDF2MS45MzFDNy4wNjEgMTkuNDM2IDQgMTYuMDcyIDQgMTJ6bTE0LjMzIDQuODczQzE3LjY3NyAxNi4zNDcgMTYuNjg3IDE2IDE2IDE2di0xYTIgMiAwIDAgMC0yLTJoLTR2LTNhMiAyIDAgMCAwIDItMlY3aDFhMiAyIDAgMCAwIDItMnYtLjQxMUMxNy45MjggNS43NzggMjAgOC42NSAyMCAxMmE3Ljk0NyA3Ljk0NyAwIDAgMS0xLjY3IDQuODczeiI+PC9wYXRoPjwvc3ZnPg==" alt="icon-image">
+            <p class="font-[cursive] text-lg m-1">{{item.strArea}}</p>
+        </div>
+        <button class="bg-[#21BA75] hover:bg-[#059669] font-[cursive] text-white rounded-3xl font-semibold text-md px-8 py-3 mb-5">View Recipe</button>
+    </div>
+    }
+</div> 

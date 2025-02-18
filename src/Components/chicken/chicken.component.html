@@ -1,0 +1,11 @@
+<div class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  text-left mt-20">
+    @for (item of ChickenList; track $index) {
+    <div class="bg-white duration-200 hover:scale-105 text-center rounded-3xl relative m-2 mb-20">
+        <img [src]="item.strMealThumb" class="w-[80%] relative bottom-14 ml-7 rounded-full hover:rotate-[360deg] duration-700" alt="">
+        <p class="font-[cursive] text-xl text-black font-semibold m-1">{{item.strMeal}}</p>
+        <div class="flex flex-nowrap justify-center text-[#059669] mb-5">
+        </div>
+        <button class="bg-[#21BA75] hover:bg-[#059669] font-[cursive] text-white rounded-3xl font-semibold text-md px-8 py-3 mb-5">View Recipe</button>
+    </div>
+    }
+</div> 
